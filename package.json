@@ -1,6 +1,6 @@
 {
   "name": "@devqin/webp-detect",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "webp detech",
   "main": "index.js",
   "scripts": {

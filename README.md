@@ -3,11 +3,11 @@ inspired by [modernizr](https://modernizr.com/download?webp-dontmin-setclasses&q
 
 # install
 
-`npm install webp-detect`
+`npm install @devqin/webp-detect`
 
 # usage
 
 ```javascript
-const webpDetech = require('webp-detech');
-webpDetech.detech().then(...).catch(...)
+const webpDetech = require('@devqin/webp-detech');
+webpDetech.detechWebp().then(...).catch(...)
 ```
