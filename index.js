@@ -17,11 +17,15 @@ const webpTests = {
   },
 };
 
-const test = url => new Promise((reslove, reject) => {
+// eslint-disable-next-line import/prefer-default-export
+export const detechWebp = (prop = 'webp') => new Promise((reslove, reject) => {
+  const { uri } = webpTests[prop];
   // eslint-disable-next-line no-undef
   const image = new Image();
-  // eslint-disable-next-line prefer-promise-reject-errors
-  image.onerror = reject(false);
+  image.onerror = () => {
+    // eslint-disable-next-line prefer-promise-reject-errors
+    reject(false);
+  };
   image.onload = (event) => {
     if (event && event.type === 'load' && image.width === 1) {
       return reslove(true);
@@ -29,10 +33,5 @@ const test = url => new Promise((reslove, reject) => {
     // eslint-disable-next-line prefer-promise-reject-errors
     return reject(false);
   };
-  image.src = url;
+  image.src = uri;
 });
-// eslint-disable-next-line import/prefer-default-export
-export const detechWebp = (prop = 'webp') => {
-  const { uri } = webpTests[prop];
-  return test(uri);
-};
