@@ -1,0 +1,28 @@
+{
+  "name": "@devqin/webp-detect",
+  "version": "1.0.0",
+  "description": "webp detech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devqin/webp-detect.git"
+  },
+  "keywords": [
+    "webp",
+    "detech"
+  ],
+  "author": "devqin@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devqin/webp-detect/issues"
+  },
+  "homepage": "https://github.com/devqin/webp-detect#readme",
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  },
+  "dependencies": {}
+}
